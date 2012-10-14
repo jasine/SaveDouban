@@ -1,0 +1,10 @@
+TextOnlyFrame:			- (Abstract Class)
+TextFrame:				TXXX, IPLS(Involved People List), WXXX
+UserTextFrame:			W000-WZZZ(User URL Frame), T000-TZZZ(User Text Frame)
+TermOfUseFrame:			USER(Term of use)
+TextFrameWithLanguage:	USLT(Unsynchronouse Lyric),  COMM(Comment)
+OwnerShipFrame:			OWNE(ownership)
+SynchronisedText:		SYLT
+PopularimeterFrame:		POPM(Popularimeter)
+PrivateFrame:			UFID( Uniqui File Idenfier )
+DataWithSymbolFrame:	GRID(Group identification), ENCR(encryption method)

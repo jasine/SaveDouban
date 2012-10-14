@@ -1,0 +1,32 @@
+Frame	Class in use				Is OK ?
+---------------------------------------------------------------
+TXXX:	TextFrame					OK
+IPLS:	TextFrame					OK
+Txxx:	UserTextFrame				OK
+UFID:	PrivateFrame				OK
+WXXX:	TextFrame					OK
+Wxxx:	UserTextFrame				OK
+MCDI:	BinaryFrame					OK
+ETCO:	EventTiming					OK
+MLLT:	MpegLocationLookupTable		-
+SYTC:	STemoCodes					OK
+USLT:	TextFrameWithLanguage		OK
+SYLT:	SynchronisedText			OK
+COMM:	TextFrameWithLanguage		OK
+RVAD:	RelativeVolumeFrame			OK
+EQUA:	Equalisation				OK
+RVRB:	ReverbFrame					OK
+APIC:	AttachedPictureFrame		OK
+GEOB:	GeneralFileFrame			OK
+PCNT:	PlayCounterFrame			OK
+POPM:	PopularimeterFrame			OK
+RBUF:	RecomendedBufferSize		OK
+AENC:	AudioEncryptionFrame		OK
+LINK:	LinkFrame					OK
+USER:	TermOfUseFrame				OK
+POSS:	PositionSynchronisedFrame	OK
+OWNE:	OwnershipFrame				OK
+COMR:	CommercialFrame				OK
+ENCR:	DataWithSymbolFrame			OK
+GRID:	DataWithSymbolFrame			OK
+PRIV:	PrivateFrame				OK
