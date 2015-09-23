@@ -284,7 +284,11 @@ namespace SaveDouban
                                 info.ID3v1Info.Title = song.Title;
                                 info.ID3v1Info.Artist = song.Artist;
                                 info.ID3v1Info.Album = song.AlbumTitle;
-                                info.ID3v1Info.Year = song.PublicationTime;
+
+                                //jasine fixed 2015.9.23 
+                                //info.ID3v1Info.Year = song.PublicationTime;
+                                info.ID3v1Info.Year = "";
+
                                 info.ID3v1Info.Comment = "jasinechen@gmail.com";//注释---------添加不上去
                                 info.ID3v1Info.Genre = 12;//类型代码Other:12 对应于ID3V2中自定义类型RedHeart
 
@@ -292,10 +296,17 @@ namespace SaveDouban
                                 info.ID3v2Info.SetTextFrame("TIT2", song.Title);
                                 info.ID3v2Info.SetTextFrame("TPE1", song.Artist);
                                 info.ID3v2Info.SetTextFrame("TALB", song.AlbumTitle);
-                                info.ID3v2Info.SetTextFrame("TYER", song.PublicationTime);
+
+                                //jasine fixed 2015.9.23 
+                                //info.ID3v2Info.SetTextFrame("TYER", song.PublicationTime);
+                                info.ID3v2Info.SetTextFrame("TYER", "");
+
                                 //info.ID3v2Info.SetTextFrame("COMM", "jasinechen@gmail.com");//注释---------添加不上去
                                 info.ID3v2Info.SetTextFrame("TCON", "RedHeart");//类型
-                                info.ID3v2Info.SetTextFrame("TPUB", song.Publisher);//发布者，发布单位
+
+                                //jasine fixed 2015.9.23 
+                                //info.ID3v2Info.SetTextFrame("TPUB", song.Publisher);//发布者，发布单位
+                                info.ID3v2Info.SetTextFrame("TPUB", "");//发布者，发布单位
 
                                 // 保存到MP3中
                                 if (ID3Version == 1)
