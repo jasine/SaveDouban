@@ -40,7 +40,7 @@ namespace ChobiQ.DoubanFMAPICodePack
             Random random = new Random();
             random.NextBytes(bytes);
             r= (BitConverter.ToUInt64(bytes, 0) % 0xFFFFFFFFFF).ToString("x10");
-            app_name = "radio_desktop_win";
+            app_name = "radio";
             version = "100";
 
             if (request.UserStatus != null)

@@ -28,10 +28,10 @@ namespace ChobiQ.DoubanFMAPICodePack
         {
             this.email = email;
             this.password = password;
-            this.app_name = "radio_desktop_win";
+            this.app_name = "radio";
             this.version = "100";
         }
-
+        
         public LoginRequestForm(LoginRequest request)
             : this(request.Email, request.Password)
         {
