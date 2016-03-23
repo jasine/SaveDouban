@@ -286,8 +286,8 @@ namespace SaveDouban
                                 info.ID3v1Info.Album = song.AlbumTitle;
 
                                 //jasine fixed 2015.9.23 
-                                //info.ID3v1Info.Year = song.PublicationTime;
-                                info.ID3v1Info.Year = "";
+                                info.ID3v1Info.Year = song.PublicationTime;
+                                //info.ID3v1Info.Year = "";
 
                                 info.ID3v1Info.Comment = "jasinechen@gmail.com";//注释---------添加不上去
                                 info.ID3v1Info.Genre = 12;//类型代码Other:12 对应于ID3V2中自定义类型RedHeart
@@ -298,8 +298,8 @@ namespace SaveDouban
                                 info.ID3v2Info.SetTextFrame("TALB", song.AlbumTitle);
 
                                 //jasine fixed 2015.9.23 
-                                //info.ID3v2Info.SetTextFrame("TYER", song.PublicationTime);
-                                info.ID3v2Info.SetTextFrame("TYER", "");
+                                info.ID3v2Info.SetTextFrame("TYER", song.PublicationTime);
+                                //info.ID3v2Info.SetTextFrame("TYER", "");
 
                                 //info.ID3v2Info.SetTextFrame("COMM", "jasinechen@gmail.com");//注释---------添加不上去
                                 info.ID3v2Info.SetTextFrame("TCON", "RedHeart");//类型
@@ -315,10 +315,10 @@ namespace SaveDouban
                                 }
                                 else
                                 {
-                                    info.Save(3);
+                                    //info.Save(3);
                                     info.ID3v2Info.PopularimeterFrames.Add(new ID3.ID3v2Frames.TextFrames.PopularimeterFrame(
                                                  FrameFlags.TagAlterPreservation, "fm.douban.com", song.Rating, 0));//豆瓣评分
-                                    info.Save(3);
+                                    info.ID3v2Info.Save(3);
                                 }
                             }
                             else

@@ -38,7 +38,7 @@ namespace ChobiQ.DoubanFMAPICodePack
             FormData data)
         {
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(
-                "http://www.douban.com" + requestUri);
+                "https://www.douban.com" + requestUri);
             request.Method = "POST";
             request.ProtocolVersion = HttpVersion.Version11;
 
